@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DEYZ STUDIO — Design with identity</title>
+<meta name="description" content="Графический дизайн и разработка современных веб-сайтов. DEYZ STUDIO.">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Иконки (используются через <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-yt" viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.4 7.4 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.6c-.2 1-.9 1.3-1.7.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 9-8.1c.4-.3-.1-.5-.6-.2L5.5 13.2l-4.7-1.5c-1-.3-1-1 .2-1.5L20.3 2.8c.9-.3 1.7.2 1.6 1.5z"/></symbol>
+</svg>
+
+<div class="bg" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <svg class="shape s1" viewBox="0 0 200 200"><rect x="30" y="30" width="140" height="140" fill="none" stroke="currentColor"/><rect x="60" y="60" width="80" height="80" fill="none" stroke="currentColor"/></svg>
+  <svg class="shape s2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="currentColor"/><circle cx="100" cy="100" r="55" fill="none" stroke="currentColor"/><path d="M10 100h180M100 10v180" stroke="currentColor"/></svg>
+</div>
+
+<header class="header" id="header">
+  <a href="#top" class="logo">DEYZ<span>STUDIO</span></a>
+  <nav class="nav" id="nav" aria-label="Навигация">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contacts">Contacts</a>
+    <a href="https://t.me/deyz888" class="btn btn-sm nav-cta" target="_blank" rel="noopener">Contact</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="eyebrow reveal">Graphic &amp; Web Design Studio</p>
+    <h1 class="reveal">DEYZ<br><em>STUDIO</em></h1>
+    <p class="slogan reveal">Создаём визуал, который невозможно не заметить</p>
+    <p class="lead reveal">Графический дизайн и разработка современных веб-сайтов. Превращаем идеи в выразительные цифровые решения.</p>
+    <a href="#portfolio" class="btn reveal">VIEW PORTFOLIO</a>
+    <a href="#portfolio" class="scroll-hint" aria-label="Вниз"><i></i></a>
+  </section>
+
+  <section class="section" id="portfolio">
+    <div class="head reveal">
+      <span class="tag">01</span>
+      <h2>SELECTED WORKS</h2>
+      <p>Подборка визуальных работ и цифровых проектов DEYZ STUDIO.</p>
+    </div>
+    <!-- Карточки создаются в script.js (массив WORKS) -->
+    <div class="tabs reveal" id="tabs" role="tablist" aria-label="Категории"></div>
+    <div class="works" id="works" aria-live="polite"></div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="head reveal">
+      <span class="tag">02</span>
+      <h2>SERVICES &amp; PRICING</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <h3>AVATARS</h3>
+        <ul><li>Создание игровых и персональных аватаров</li><li>Индивидуальный визуальный стиль</li></ul>
+        <div class="price">99 ₽</div>
+        <a href="https://t.me/deyz888?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80" class="btn" target="_blank" rel="noopener">ORDER</a>
+      </article>
+      <article class="card reveal">
+        <h3>BANNERS</h3>
+        <ul><li>Баннеры для YouTube, Telegram и социальных сетей</li><li>Индивидуальное оформление</li></ul>
+        <div class="price">119 ₽</div>
+        <a href="https://t.me/deyz888?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80" class="btn" target="_blank" rel="noopener">ORDER</a>
+      </article>
+      <article class="card reveal">
+        <h3>WEB DESIGN</h3>
+        <ul><li>Лендинги (одностраничные сайты)</li><li>Сайты-визитки</li><li>Персональные сайты-портфолио</li><li>Простые сайты для небольших проектов и сообществ</li></ul>
+        <div class="price small">по договорённости</div>
+        <a href="https://t.me/deyz888?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0" class="btn" target="_blank" rel="noopener">ORDER</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="head reveal">
+      <span class="tag">03</span>
+      <h2>ABOUT DEYZ STUDIO</h2>
+    </div>
+    <div class="about-box reveal">
+      <p>DEYZ STUDIO — независимая творческая студия, объединяющая графический дизайн и веб-разработку.</p>
+      <p class="muted">Наша цель — создавать лаконичные, продуманные и запоминающиеся визуальные решения, в которых каждая деталь имеет значение.</p>
+    </div>
+  </section>
+
+  <section class="section contacts" id="contacts">
+    <div class="head reveal">
+      <span class="tag">04</span>
+      <h2>LET’S CONNECT</h2>
+      <p>Есть идея или проект? Давайте воплотим его в жизнь.</p>
+    </div>
+    <div class="socials reveal">
+      <a href="https://youtube.com/@mekzodp?si=6eaXD9vTEAZtvxaW" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg><span>YouTube</span></a>
+      <a href="https://www.tiktok.com/@dest_dest6?_r=1&amp;_t=ZG-9B5oXMCf6Gm" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tt"/></svg><span>TikTok</span></a>
+      <a href="https://t.me/deyz_w" target="_blank" rel="noopener" aria-label="Telegram канал"><svg><use href="#i-tg"/></svg><span>Telegram channel</span></a>
+      <a href="https://t.me/deyz888" target="_blank" rel="noopener" aria-label="Telegram личный"><svg><use href="#i-tg"/></svg><span>Telegram personal</span></a>
+    </div>
+    <a href="https://t.me/deyz888" class="btn btn-lg reveal" target="_blank" rel="noopener">CONTACT ME</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="foot-top">
+    <div><a href="#top" class="logo">DEYZ<span>STUDIO</span></a><p class="muted">DESIGN WITH IDENTITY.</p></div>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="#portfolio">Portfolio</a><a href="#services">Services</a><a href="#about">About</a><a href="#contacts">Contacts</a>
+    </nav>
+    <div class="foot-soc">
+      <a href="https://youtube.com/@mekzodp?si=6eaXD9vTEAZtvxaW" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+      <a href="https://www.tiktok.com/@dest_dest6?_r=1&amp;_t=ZG-9B5oXMCf6Gm" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
+      <a href="https://t.me/deyz_w" target="_blank" rel="noopener" aria-label="Telegram канал"><svg><use href="#i-tg"/></svg></a>
+      <a href="https://t.me/deyz888" target="_blank" rel="noopener" aria-label="Telegram личный"><svg><use href="#i-tg"/></svg></a>
+    </div>
+  </div>
+  <p class="copy">DEYZ STUDIO © 2026</p>
+</footer>
+
+<dialog class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Закрыть">×</button>
+  <div class="lb-media" id="lbMedia"></div>
+  <div class="lb-info"><span class="tag" id="lbCat"></span><h3 id="lbTitle"></h3><p class="muted" id="lbDesc"></p></div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
